@@ -1,0 +1,234 @@
+==PROF== Connected to process 4712 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 1
+Cublas Solution: 1611.75ms
+==PROF== Profiling "Shared" - 1: Application replay pass 1
+
+==WARNING== Launching the workload is taking more time than expected. If this continues to hang, terminate the profile and re-try by profiling the range of all related launches using '--replay-mode app-range'. See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#replay for more details.
+Shared Memory Solution: 23147.7ms
+6.96291%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 1
+Check result success!
+Cublas Solution: 1611.75ms
+Register Optimize Solution: 10507ms
+15.3398%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 1
+Check result success!
+Cublas Solution: 1611.75ms
+Double Buffering Solution: 3350.22ms
+48.1089%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 1
+Check result success!
+Cublas Solution: 1611.75ms
+Warptiling Solution: 1427.14ms
+112.936%
+Check result success!
+==PROF== Disconnected from process 4712
+==PROF== Connected to process 22104 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 2
+Cublas Solution: 1173.45ms
+==PROF== Profiling "Shared" - 1: Application replay pass 2
+Shared Memory Solution: 11387.9ms
+10.3044%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 2
+Check result success!
+Cublas Solution: 1173.45ms
+Register Optimize Solution: 6042.63ms
+19.4196%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 2
+Check result success!
+Cublas Solution: 1173.45ms
+Double Buffering Solution: 1433.35ms
+81.8682%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 2
+Check result success!
+Cublas Solution: 1173.45ms
+Warptiling Solution: 1197.02ms
+98.0312%
+Check result success!
+==PROF== Disconnected from process 22104
+==PROF== Connected to process 25348 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 3
+Cublas Solution: 1203.21ms
+==PROF== Profiling "Shared" - 1: Application replay pass 3
+Shared Memory Solution: 11677.5ms
+10.3037%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 3
+Check result success!
+Cublas Solution: 1203.21ms
+Register Optimize Solution: 6059.55ms
+19.8565%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 3
+Check result success!
+Cublas Solution: 1203.21ms
+Double Buffering Solution: 1430.46ms
+84.1136%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 3
+Check result success!
+Cublas Solution: 1203.21ms
+Warptiling Solution: 1245.32ms
+96.6185%
+Check result success!
+==PROF== Disconnected from process 25348
+==PROF== Connected to process 1936 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 4
+Cublas Solution: 1138.29ms
+==PROF== Profiling "Shared" - 1: Application replay pass 4
+Shared Memory Solution: 11242.7ms
+10.1247%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 4
+Check result success!
+Cublas Solution: 1138.29ms
+Register Optimize Solution: 5909.63ms
+19.2616%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 4
+Check result success!
+Cublas Solution: 1138.29ms
+Double Buffering Solution: 1365.62ms
+83.3534%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 4
+Check result success!
+Cublas Solution: 1138.29ms
+Warptiling Solution: 1196.53ms
+95.1327%
+Check result success!
+==PROF== Disconnected from process 1936
+==PROF== Connected to process 5136 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 5
+Cublas Solution: 1138.14ms
+==PROF== Profiling "Shared" - 1: Application replay pass 5
+Shared Memory Solution: 11265.8ms
+10.1026%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 5
+Check result success!
+Cublas Solution: 1138.14ms
+Register Optimize Solution: 5860.66ms
+19.4201%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 5
+Check result success!
+Cublas Solution: 1138.14ms
+Double Buffering Solution: 1365.72ms
+83.3367%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 5
+Check result success!
+Cublas Solution: 1138.14ms
+Warptiling Solution: 1199.52ms
+94.883%
+Check result success!
+==PROF== Disconnected from process 5136
+==PROF== Connected to process 17624 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 6
+Cublas Solution: 1145.05ms
+==PROF== Profiling "Shared" - 1: Application replay pass 6
+Shared Memory Solution: 11181.1ms
+10.2409%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 6
+Check result success!
+Cublas Solution: 1145.05ms
+Register Optimize Solution: 5959.18ms
+19.215%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 6
+Check result success!
+Cublas Solution: 1145.05ms
+Double Buffering Solution: 1365.57ms
+83.8517%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 6
+Check result success!
+Cublas Solution: 1145.05ms
+Warptiling Solution: 1196.4ms
+95.7086%
+Check result success!
+==PROF== Disconnected from process 17624
+==PROF== Connected to process 15800 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 7
+Cublas Solution: 1142.95ms
+==PROF== Profiling "Shared" - 1: Application replay pass 7
+Shared Memory Solution: 11308ms
+10.1075%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 7
+Check result success!
+Cublas Solution: 1142.95ms
+Register Optimize Solution: 6030.09ms
+18.9542%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 7
+Check result success!
+Cublas Solution: 1142.95ms
+Double Buffering Solution: 1386.64ms
+82.4261%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 7
+Check result success!
+Cublas Solution: 1142.95ms
+Warptiling Solution: 1211.5ms
+94.3417%
+Check result success!
+==PROF== Disconnected from process 15800
+==PROF== Connected to process 6800 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 8
+Cublas Solution: 1150.72ms
+==PROF== Profiling "Shared" - 1: Application replay pass 8
+Shared Memory Solution: 11215.1ms
+10.2605%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 8
+Check result success!
+Cublas Solution: 1150.72ms
+Register Optimize Solution: 5906.54ms
+19.4821%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 8
+Check result success!
+Cublas Solution: 1150.72ms
+Double Buffering Solution: 1376.51ms
+83.597%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 8
+Check result success!
+Cublas Solution: 1150.72ms
+Warptiling Solution: 1204.47ms
+95.5372%
+Check result success!
+==PROF== Disconnected from process 6800
+==PROF== Connected to process 18560 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 9
+Cublas Solution: 1134.13ms
+==PROF== Profiling "Shared" - 1: Application replay pass 9
+Shared Memory Solution: 11192.1ms
+10.1333%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 9
+Check result success!
+Cublas Solution: 1134.13ms
+Register Optimize Solution: 5904.58ms
+19.2076%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 9
+Check result success!
+Cublas Solution: 1134.13ms
+Double Buffering Solution: 1383.18ms
+81.9943%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 9
+Check result success!
+Cublas Solution: 1134.13ms
+Warptiling Solution: 1199.04ms
+94.5862%
+Check result success!
+==PROF== Disconnected from process 18560
+==PROF== Connected to process 25712 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
+==PROF== Profiling "Kernel" - 0: Application replay pass 10
+Cublas Solution: 1150.57ms
+==PROF== Profiling "Shared" - 1: Application replay pass 10
+Shared Memory Solution: 11378.7ms
+10.1116%
+==PROF== Profiling "sharedILPkernel" - 2: Application replay pass 10
+Check result success!
+Cublas Solution: 1150.57ms
+Register Optimize Solution: 5859.72ms
+19.6352%
+==PROF== Profiling "doubleBuffering" - 3: Application replay pass 10
+Check result success!
+Cublas Solution: 1150.57ms
+Double Buffering Solution: 1366.84ms
+84.1771%
+==PROF== Profiling "sgemmWarptiling" - 4: Application replay pass 10
+Check result success!
+Cublas Solution: 1150.57ms
+Warptiling Solution: 1194.54ms
+96.3186%
+Check result success!
+==PROF== Disconnected from process 25712
+==PROF== Creating report from application replay data: 0%..................100%
+==PROF== Report: C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\profile_report.ncu-rep
