@@ -1,3 +1,0 @@
-==PROF== Connected to process 26588 (C:\Users\216\source\repos\NVIDIA_SGEMM_PRACTICE\NVIDIA_SGEMM_PRACTICE\kernel.exe)
-==PROF== Disconnected from process 26588
-==WARNING== No ranges were profiled.
