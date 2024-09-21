@@ -1,0 +1,42 @@
+每个 warp 包含 32 个 thread, 而 GPU 的指令发射是以 warp 为最小单元的.
+Global Memory 的读/写访问均是以 32 Byte 为单元的, 称为 1 个 segment, 即 1 transaction 可访问 32 Byte 数据 (我们假设 L1 cache 为 non-caching).
+
+每个SM的最大线程数：2048个线程
+每个SM的最大线程块数：16个块（blocks）
+每个线程块的最大线程数：1024个线程
+sm数:30<84
+总全局内存:6143MB<48685 MB
+
+nvcc -G kernel.cu -o kernel.exe -lcublas
+nvcc -O3 --use_fast_math -lineinfo -Xptxas -v -arch=sm_86 kernel.cu -o kernel.exe -lcublas
+ncu --set full --target-processes all kernel.exe
+ncu --set full --target-processes all --replay-mode app-range --log-file analysis_log.txt ./kernel.exe
+
+
+ncu --replay-mode application --export profile_report ./kernel.exe
+ncu --replay-mode application --export profile_report ./kernel.exe > log.txt
+cmd:
+//ncu --replay-mode application --export profile_report ./kernel.exe --log-file log.txt
+
+powershell:
+ncu --replay-mode application --export profile_report ./kernel.exe | Tee-Object -FilePath log.txt
+
+
+
+ncu --replay-mode application --export profile_report -f ./kernel.exe
+ncu --replay-mode application --export profile_report -f ./kernel.exe > log.txt
+--section ComputeWorkloadAnalysis
+ncu --nvtx --replay-mode application --export profile_report --section ComputeWorkloadAnalysis --section MemoryWorkloadAnalysis -f ./kernel.exe > log.txt
+cmd:
+//ncu --replay-mode application --export profile_report -f ./kernel.exe --log-file log.txt
+
+powershell:
+ncu --replay-mode application --export profile_report -f ./kernel.exe | Tee-Object -FilePath log.txt
+ncu --nvtx --replay-mode application --export profile_report --section ComputeWorkloadAnalysis --section MemoryWorkloadAnalysis -f ./kernel.exe | Tee-Object -FilePath log.txt
+
+ncu --nvtx --replay-mode application --export profile_report3 --section ComputeWorkloadAnalysis --section MemoryWorkloadAnalysis  --section MemoryWorkloadAnalysis_Chart --section MemoryWorkloadAnalysis_Tables ./kernel.exe | Tee-Object -FilePath log3.txt
+
+ncu --import profile_report.ncu-rep
+
+
+pytorch
